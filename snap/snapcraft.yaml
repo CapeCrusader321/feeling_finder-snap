@@ -29,4 +29,6 @@ parts:
       craftctl set version=$(git describe --tags --abbrev=0 | cut -c 2-)
       VER="$(git describe --tags --abbrev=0 | cut -c 2-)"
       curl -LO https://github.com/Merrit/feeling_finder/releases/download/${VER}/FeelingFinder-Linux-Portable.tar.gz 
-      
+    override-build: |
+      craftctl default
+      tar –xvzf FeelingFinder-Linux-Portable.tar.gz –C $CRAFT_PART_INSTALL
