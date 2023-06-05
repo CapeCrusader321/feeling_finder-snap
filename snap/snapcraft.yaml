@@ -32,3 +32,11 @@ parts:
     override-build: |
       craftctl default
       tar –xvzf FeelingFinder-Linux-Portable.tar.gz –C $CRAFT_PART_INSTALL
+  
+  cleanup:
+    plugin: nil
+    after: [feeling-finder]
+    override-prime: |
+      craftctl default
+      rm -f FeelingFinder-Linux-Portable.tar.gz
+      
