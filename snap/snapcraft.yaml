@@ -16,6 +16,13 @@ apps:
     command: feeling_finder
     extensions: [gnome]
     common-id: codes.merritt.FeelingFinder
+    plugs:
+      - network
+      - network-status
+      - network-bind
+      - unity7
+      - screen-inhibit-control
+      - home
   
 parts:
   feeling-finder:
