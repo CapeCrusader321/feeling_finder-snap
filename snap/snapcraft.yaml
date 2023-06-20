@@ -1,6 +1,6 @@
 name: feeling-finder
 grade: stable
-version: 1.1.0
+version: 1.2.0
 summary: A fast and beautiful emoji picker.
 description: |
   Fast and beautiful emoji picker. Easily find the perfect emoji by genre.
@@ -27,5 +27,5 @@ apps:
 parts:
   feeling-finder:
     plugin: dump
-    source: https://github.com/Merrit/feeling_finder/releases/download/v1.1.0/FeelingFinder-Linux-Portable.tar.gz 
+    source: https://github.com/Merrit/feeling_finder/releases/download/v1.2.0/FeelingFinder-Linux-Portable.tar.gz
     
